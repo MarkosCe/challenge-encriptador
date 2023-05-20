@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="imagenes/Logo.png" alt="logo">
+        </h1>
+    </header>
+    <main>
+            <section class="box-input">
+                <textarea id="textareamsg" spellcheck="false" rows="20" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="box-button">
+                    <p class="warning"><img src="imagenes/Vector.png" alt=""> Solo letras minusculas y sin acentos</p>
+                    <button id="encriptar" class="button-enc">Encriptar</button>
+                    <button id="desencriptar" class="button-des">Desencriptar</button>
+                </div>
+            </section>
+            <section class="box-side">
+                <p id="parrafo-texto" class="view-text"></p>
+                <div id="not-found">
+                    <img src="imagenes/Muñeco.png" alt="">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p id="parrafo">Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div>
+                    <button id="button-copy" >Copiar</button>
+                </div>
+            </section>        
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
